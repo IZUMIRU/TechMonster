@@ -1,0 +1,633 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FDDE23521C6E222F00DA8141 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE23511C6E222F00DA8141 /* AppDelegate.swift */; };
+		FDDE23541C6E222F00DA8141 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE23531C6E222F00DA8141 /* ViewController.swift */; };
+		FDDE23571C6E222F00DA8141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDE23551C6E222F00DA8141 /* Main.storyboard */; };
+		FDDE23591C6E222F00DA8141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDDE23581C6E222F00DA8141 /* Assets.xcassets */; };
+		FDDE235C1C6E222F00DA8141 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDDE235A1C6E222F00DA8141 /* LaunchScreen.storyboard */; };
+		FDDE23671C6E222F00DA8141 /* TechMonsterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE23661C6E222F00DA8141 /* TechMonsterTests.swift */; };
+		FDDE23721C6E222F00DA8141 /* TechMonsterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE23711C6E222F00DA8141 /* TechMonsterUITests.swift */; };
+		FDDE23971C6E227400DA8141 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDDE23811C6E227300DA8141 /* Default-568h@2x.png */; settings = {ASSET_TAGS = (); }; };
+		FDDE23981C6E227400DA8141 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDDE23821C6E227300DA8141 /* Default-667h@2x.png */; settings = {ASSET_TAGS = (); }; };
+		FDDE23991C6E227400DA8141 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FDDE23831C6E227300DA8141 /* Default-736h@3x.png */; settings = {ASSET_TAGS = (); }; };
+		FDDE239A1C6E227400DA8141 /* misaki_gothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FDDE23851C6E227300DA8141 /* misaki_gothic.ttf */; settings = {ASSET_TAGS = (); }; };
+		FDDE239B1C6E227400DA8141 /* battlebg.png in Resources */ = {isa = PBXBuildFile; fileRef = FDDE23871C6E227400DA8141 /* battlebg.png */; settings = {ASSET_TAGS = (); }; };
+		FDDE239C1C6E227400DA8141 /* bgimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FDDE23881C6E227400DA8141 /* bgimage.jpg */; settings = {ASSET_TAGS = (); }; };
+		FDDE239D1C6E227400DA8141 /* falcon.png in Resources */ = {isa = PBXBuildFile; fileRef = FDDE23891C6E227400DA8141 /* falcon.png */; settings = {ASSET_TAGS = (); }; };
+		FDDE239E1C6E227400DA8141 /* gold_button.png in Resources */ = {isa = PBXBuildFile; fileRef = FDDE238A1C6E227400DA8141 /* gold_button.png */; settings = {ASSET_TAGS = (); }; };
+		FDDE239F1C6E227400DA8141 /* lobby.png in Resources */ = {isa = PBXBuildFile; fileRef = FDDE238B1C6E227400DA8141 /* lobby.png */; settings = {ASSET_TAGS = (); }; };
+		FDDE23A01C6E227400DA8141 /* waku.png in Resources */ = {isa = PBXBuildFile; fileRef = FDDE238C1C6E227400DA8141 /* waku.png */; settings = {ASSET_TAGS = (); }; };
+		FDDE23A11C6E227400DA8141 /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE238E1C6E227400DA8141 /* Enemy.swift */; settings = {ASSET_TAGS = (); }; };
+		FDDE23A21C6E227400DA8141 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE238F1C6E227400DA8141 /* Player.swift */; settings = {ASSET_TAGS = (); }; };
+		FDDE23A31C6E227400DA8141 /* TechDraUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE23901C6E227400DA8141 /* TechDraUtility.swift */; settings = {ASSET_TAGS = (); }; };
+		FDDE23A41C6E227400DA8141 /* BGM_battle001.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FDDE23921C6E227400DA8141 /* BGM_battle001.mp3 */; settings = {ASSET_TAGS = (); }; };
+		FDDE23A51C6E227400DA8141 /* lobby.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FDDE23931C6E227400DA8141 /* lobby.mp3 */; settings = {ASSET_TAGS = (); }; };
+		FDDE23A61C6E227400DA8141 /* SE_attack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FDDE23941C6E227400DA8141 /* SE_attack.mp3 */; settings = {ASSET_TAGS = (); }; };
+		FDDE23A71C6E227400DA8141 /* SE_fanfare.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FDDE23951C6E227400DA8141 /* SE_fanfare.mp3 */; settings = {ASSET_TAGS = (); }; };
+		FDDE23A81C6E227400DA8141 /* SE_gameover.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FDDE23961C6E227400DA8141 /* SE_gameover.mp3 */; settings = {ASSET_TAGS = (); }; };
+		FDDE23AA1C6E278D00DA8141 /* LobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE23A91C6E278D00DA8141 /* LobbyViewController.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDDE23631C6E222F00DA8141 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDDE23461C6E222F00DA8141 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDDE234D1C6E222F00DA8141;
+			remoteInfo = TechMonster;
+		};
+		FDDE236E1C6E222F00DA8141 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDDE23461C6E222F00DA8141 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDDE234D1C6E222F00DA8141;
+			remoteInfo = TechMonster;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FDDE234E1C6E222F00DA8141 /* TechMonster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechMonster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDDE23511C6E222F00DA8141 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FDDE23531C6E222F00DA8141 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FDDE23561C6E222F00DA8141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FDDE23581C6E222F00DA8141 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDDE235B1C6E222F00DA8141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDDE235D1C6E222F00DA8141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDDE23621C6E222F00DA8141 /* TechMonsterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechMonsterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDDE23661C6E222F00DA8141 /* TechMonsterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechMonsterTests.swift; sourceTree = "<group>"; };
+		FDDE23681C6E222F00DA8141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDDE236D1C6E222F00DA8141 /* TechMonsterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechMonsterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDDE23711C6E222F00DA8141 /* TechMonsterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechMonsterUITests.swift; sourceTree = "<group>"; };
+		FDDE23731C6E222F00DA8141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDDE23811C6E227300DA8141 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FDDE23821C6E227300DA8141 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
+		FDDE23831C6E227300DA8141 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
+		FDDE23851C6E227300DA8141 /* misaki_gothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = misaki_gothic.ttf; sourceTree = "<group>"; };
+		FDDE23871C6E227400DA8141 /* battlebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = battlebg.png; sourceTree = "<group>"; };
+		FDDE23881C6E227400DA8141 /* bgimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bgimage.jpg; sourceTree = "<group>"; };
+		FDDE23891C6E227400DA8141 /* falcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = falcon.png; sourceTree = "<group>"; };
+		FDDE238A1C6E227400DA8141 /* gold_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gold_button.png; sourceTree = "<group>"; };
+		FDDE238B1C6E227400DA8141 /* lobby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lobby.png; sourceTree = "<group>"; };
+		FDDE238C1C6E227400DA8141 /* waku.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waku.png; sourceTree = "<group>"; };
+		FDDE238E1C6E227400DA8141 /* Enemy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		FDDE238F1C6E227400DA8141 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		FDDE23901C6E227400DA8141 /* TechDraUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TechDraUtility.swift; sourceTree = "<group>"; };
+		FDDE23921C6E227400DA8141 /* BGM_battle001.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BGM_battle001.mp3; sourceTree = "<group>"; };
+		FDDE23931C6E227400DA8141 /* lobby.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lobby.mp3; sourceTree = "<group>"; };
+		FDDE23941C6E227400DA8141 /* SE_attack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SE_attack.mp3; sourceTree = "<group>"; };
+		FDDE23951C6E227400DA8141 /* SE_fanfare.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SE_fanfare.mp3; sourceTree = "<group>"; };
+		FDDE23961C6E227400DA8141 /* SE_gameover.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SE_gameover.mp3; sourceTree = "<group>"; };
+		FDDE23A91C6E278D00DA8141 /* LobbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LobbyViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDDE234B1C6E222F00DA8141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDDE235F1C6E222F00DA8141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDDE236A1C6E222F00DA8141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDDE23451C6E222F00DA8141 = {
+			isa = PBXGroup;
+			children = (
+				FDDE23501C6E222F00DA8141 /* TechMonster */,
+				FDDE23651C6E222F00DA8141 /* TechMonsterTests */,
+				FDDE23701C6E222F00DA8141 /* TechMonsterUITests */,
+				FDDE234F1C6E222F00DA8141 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDDE234F1C6E222F00DA8141 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDDE234E1C6E222F00DA8141 /* TechMonster.app */,
+				FDDE23621C6E222F00DA8141 /* TechMonsterTests.xctest */,
+				FDDE236D1C6E222F00DA8141 /* TechMonsterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDDE23501C6E222F00DA8141 /* TechMonster */ = {
+			isa = PBXGroup;
+			children = (
+				FDDE237F1C6E227300DA8141 /* TechMon_Resources */,
+				FDDE23511C6E222F00DA8141 /* AppDelegate.swift */,
+				FDDE23531C6E222F00DA8141 /* ViewController.swift */,
+				FDDE23A91C6E278D00DA8141 /* LobbyViewController.swift */,
+				FDDE23551C6E222F00DA8141 /* Main.storyboard */,
+				FDDE23581C6E222F00DA8141 /* Assets.xcassets */,
+				FDDE235A1C6E222F00DA8141 /* LaunchScreen.storyboard */,
+				FDDE235D1C6E222F00DA8141 /* Info.plist */,
+			);
+			path = TechMonster;
+			sourceTree = "<group>";
+		};
+		FDDE23651C6E222F00DA8141 /* TechMonsterTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDDE23661C6E222F00DA8141 /* TechMonsterTests.swift */,
+				FDDE23681C6E222F00DA8141 /* Info.plist */,
+			);
+			path = TechMonsterTests;
+			sourceTree = "<group>";
+		};
+		FDDE23701C6E222F00DA8141 /* TechMonsterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FDDE23711C6E222F00DA8141 /* TechMonsterUITests.swift */,
+				FDDE23731C6E222F00DA8141 /* Info.plist */,
+			);
+			path = TechMonsterUITests;
+			sourceTree = "<group>";
+		};
+		FDDE237F1C6E227300DA8141 /* TechMon_Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FDDE23801C6E227300DA8141 /* Defaults */,
+				FDDE23841C6E227300DA8141 /* Fonts */,
+				FDDE23861C6E227400DA8141 /* Images */,
+				FDDE238D1C6E227400DA8141 /* Models */,
+				FDDE23911C6E227400DA8141 /* Sounds */,
+			);
+			path = TechMon_Resources;
+			sourceTree = "<group>";
+		};
+		FDDE23801C6E227300DA8141 /* Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				FDDE23811C6E227300DA8141 /* Default-568h@2x.png */,
+				FDDE23821C6E227300DA8141 /* Default-667h@2x.png */,
+				FDDE23831C6E227300DA8141 /* Default-736h@3x.png */,
+			);
+			path = Defaults;
+			sourceTree = "<group>";
+		};
+		FDDE23841C6E227300DA8141 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FDDE23851C6E227300DA8141 /* misaki_gothic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FDDE23861C6E227400DA8141 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FDDE23871C6E227400DA8141 /* battlebg.png */,
+				FDDE23881C6E227400DA8141 /* bgimage.jpg */,
+				FDDE23891C6E227400DA8141 /* falcon.png */,
+				FDDE238A1C6E227400DA8141 /* gold_button.png */,
+				FDDE238B1C6E227400DA8141 /* lobby.png */,
+				FDDE238C1C6E227400DA8141 /* waku.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		FDDE238D1C6E227400DA8141 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FDDE238E1C6E227400DA8141 /* Enemy.swift */,
+				FDDE238F1C6E227400DA8141 /* Player.swift */,
+				FDDE23901C6E227400DA8141 /* TechDraUtility.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FDDE23911C6E227400DA8141 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				FDDE23921C6E227400DA8141 /* BGM_battle001.mp3 */,
+				FDDE23931C6E227400DA8141 /* lobby.mp3 */,
+				FDDE23941C6E227400DA8141 /* SE_attack.mp3 */,
+				FDDE23951C6E227400DA8141 /* SE_fanfare.mp3 */,
+				FDDE23961C6E227400DA8141 /* SE_gameover.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDDE234D1C6E222F00DA8141 /* TechMonster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDDE23761C6E222F00DA8141 /* Build configuration list for PBXNativeTarget "TechMonster" */;
+			buildPhases = (
+				FDDE234A1C6E222F00DA8141 /* Sources */,
+				FDDE234B1C6E222F00DA8141 /* Frameworks */,
+				FDDE234C1C6E222F00DA8141 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TechMonster;
+			productName = TechMonster;
+			productReference = FDDE234E1C6E222F00DA8141 /* TechMonster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDDE23611C6E222F00DA8141 /* TechMonsterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDDE23791C6E222F00DA8141 /* Build configuration list for PBXNativeTarget "TechMonsterTests" */;
+			buildPhases = (
+				FDDE235E1C6E222F00DA8141 /* Sources */,
+				FDDE235F1C6E222F00DA8141 /* Frameworks */,
+				FDDE23601C6E222F00DA8141 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDDE23641C6E222F00DA8141 /* PBXTargetDependency */,
+			);
+			name = TechMonsterTests;
+			productName = TechMonsterTests;
+			productReference = FDDE23621C6E222F00DA8141 /* TechMonsterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FDDE236C1C6E222F00DA8141 /* TechMonsterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDDE237C1C6E222F00DA8141 /* Build configuration list for PBXNativeTarget "TechMonsterUITests" */;
+			buildPhases = (
+				FDDE23691C6E222F00DA8141 /* Sources */,
+				FDDE236A1C6E222F00DA8141 /* Frameworks */,
+				FDDE236B1C6E222F00DA8141 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDDE236F1C6E222F00DA8141 /* PBXTargetDependency */,
+			);
+			name = TechMonsterUITests;
+			productName = TechMonsterUITests;
+			productReference = FDDE236D1C6E222F00DA8141 /* TechMonsterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDDE23461C6E222F00DA8141 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "森泉亮介";
+				TargetAttributes = {
+					FDDE234D1C6E222F00DA8141 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = CDRY7VVZEZ;
+					};
+					FDDE23611C6E222F00DA8141 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = CDRY7VVZEZ;
+						TestTargetID = FDDE234D1C6E222F00DA8141;
+					};
+					FDDE236C1C6E222F00DA8141 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = CDRY7VVZEZ;
+						TestTargetID = FDDE234D1C6E222F00DA8141;
+					};
+				};
+			};
+			buildConfigurationList = FDDE23491C6E222F00DA8141 /* Build configuration list for PBXProject "TechMonster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDDE23451C6E222F00DA8141;
+			productRefGroup = FDDE234F1C6E222F00DA8141 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDDE234D1C6E222F00DA8141 /* TechMonster */,
+				FDDE23611C6E222F00DA8141 /* TechMonsterTests */,
+				FDDE236C1C6E222F00DA8141 /* TechMonsterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDDE234C1C6E222F00DA8141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDDE23A01C6E227400DA8141 /* waku.png in Resources */,
+				FDDE23A71C6E227400DA8141 /* SE_fanfare.mp3 in Resources */,
+				FDDE235C1C6E222F00DA8141 /* LaunchScreen.storyboard in Resources */,
+				FDDE239E1C6E227400DA8141 /* gold_button.png in Resources */,
+				FDDE23A41C6E227400DA8141 /* BGM_battle001.mp3 in Resources */,
+				FDDE23A51C6E227400DA8141 /* lobby.mp3 in Resources */,
+				FDDE239A1C6E227400DA8141 /* misaki_gothic.ttf in Resources */,
+				FDDE23971C6E227400DA8141 /* Default-568h@2x.png in Resources */,
+				FDDE239F1C6E227400DA8141 /* lobby.png in Resources */,
+				FDDE23591C6E222F00DA8141 /* Assets.xcassets in Resources */,
+				FDDE239B1C6E227400DA8141 /* battlebg.png in Resources */,
+				FDDE23A61C6E227400DA8141 /* SE_attack.mp3 in Resources */,
+				FDDE23A81C6E227400DA8141 /* SE_gameover.mp3 in Resources */,
+				FDDE23571C6E222F00DA8141 /* Main.storyboard in Resources */,
+				FDDE239C1C6E227400DA8141 /* bgimage.jpg in Resources */,
+				FDDE23981C6E227400DA8141 /* Default-667h@2x.png in Resources */,
+				FDDE239D1C6E227400DA8141 /* falcon.png in Resources */,
+				FDDE23991C6E227400DA8141 /* Default-736h@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDDE23601C6E222F00DA8141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDDE236B1C6E222F00DA8141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDDE234A1C6E222F00DA8141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDDE23A21C6E227400DA8141 /* Player.swift in Sources */,
+				FDDE23A31C6E227400DA8141 /* TechDraUtility.swift in Sources */,
+				FDDE23541C6E222F00DA8141 /* ViewController.swift in Sources */,
+				FDDE23AA1C6E278D00DA8141 /* LobbyViewController.swift in Sources */,
+				FDDE23521C6E222F00DA8141 /* AppDelegate.swift in Sources */,
+				FDDE23A11C6E227400DA8141 /* Enemy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDDE235E1C6E222F00DA8141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDDE23671C6E222F00DA8141 /* TechMonsterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDDE23691C6E222F00DA8141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDDE23721C6E222F00DA8141 /* TechMonsterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDDE23641C6E222F00DA8141 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDDE234D1C6E222F00DA8141 /* TechMonster */;
+			targetProxy = FDDE23631C6E222F00DA8141 /* PBXContainerItemProxy */;
+		};
+		FDDE236F1C6E222F00DA8141 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDDE234D1C6E222F00DA8141 /* TechMonster */;
+			targetProxy = FDDE236E1C6E222F00DA8141 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FDDE23551C6E222F00DA8141 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDDE23561C6E222F00DA8141 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FDDE235A1C6E222F00DA8141 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDDE235B1C6E222F00DA8141 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDDE23741C6E222F00DA8141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FDDE23751C6E222F00DA8141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDDE23771C6E222F00DA8141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TechMonster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.TechMonster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FDDE23781C6E222F00DA8141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TechMonster/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.TechMonster;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FDDE237A1C6E222F00DA8141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TechMonsterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.TechMonsterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TechMonster.app/TechMonster";
+			};
+			name = Debug;
+		};
+		FDDE237B1C6E222F00DA8141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TechMonsterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.TechMonsterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TechMonster.app/TechMonster";
+			};
+			name = Release;
+		};
+		FDDE237D1C6E222F00DA8141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TechMonsterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.TechMonsterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TechMonster;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FDDE237E1C6E222F00DA8141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TechMonsterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.litech.TechMonsterUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TechMonster;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDDE23491C6E222F00DA8141 /* Build configuration list for PBXProject "TechMonster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDDE23741C6E222F00DA8141 /* Debug */,
+				FDDE23751C6E222F00DA8141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDDE23761C6E222F00DA8141 /* Build configuration list for PBXNativeTarget "TechMonster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDDE23771C6E222F00DA8141 /* Debug */,
+				FDDE23781C6E222F00DA8141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FDDE23791C6E222F00DA8141 /* Build configuration list for PBXNativeTarget "TechMonsterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDDE237A1C6E222F00DA8141 /* Debug */,
+				FDDE237B1C6E222F00DA8141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FDDE237C1C6E222F00DA8141 /* Build configuration list for PBXNativeTarget "TechMonsterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDDE237D1C6E222F00DA8141 /* Debug */,
+				FDDE237E1C6E222F00DA8141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDDE23461C6E222F00DA8141 /* Project object */;
+}
